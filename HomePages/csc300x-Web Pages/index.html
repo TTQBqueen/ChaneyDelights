@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <title>Chaney’s Delights</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- <link rel="stylesheet" href="homepage.css" />
+ <link rel="stylesheet" href="homePageStyles2.css" />
 <link rel="stylesheet" href="homePage.css" />
+<link rel="stylesheet" href="style.css" />
 <script src="homeJava.js"> </script>
 </head>
 <body>
@@ -17,10 +18,12 @@
     <!-- Nav1: Name, Logo , Search, Login, shopping cart -->
 <nav id = "nav1"> 
     <div id = "name">Chaney’s Delights</div>
-    <div id = "search"> <span class = "search"> <form action="#"><input type="text" placeholder="Search" name="search">
+    <div id = "search"> <span class = "search"><form action="#"><input type="text" placeholder="Search" name="search">
         <button>Search</button><a href="#" class="button"></a></div>
-    <div id = "login"><i class="material-icons">face_2</i><a href="#" >Sign In</a></div>
-    <div id = ShoppingCart><i class="material-icons"><a href="#">shopping_cart_checkout</a></i></div>
+    <div class = "login">
+        <i class="material-icons" id = "navIcon">face_2</i>
+        <a href="#">Sign In</a></div>
+    <div id = ShoppingCart><i class="material-icons" id = "navIcon" ><a href="#">shopping_cart_checkout</a></i></div>
 </nav>
     
 
@@ -48,6 +51,30 @@
         <button>Shop Now</button><a href="#" class="button"></a>
       </div>
 
+<!-- Raven Griffen -->
+
+<h1> Best Sellers</h1>
+<div class="flex-container">
+    <div class="flex-item box-1">1</div>
+    <div class="flex-item box-2">2</div>
+    <div class="flex-item box-3">3</div>
+</div>
+
+<div class="container">
+    <div class="little-boxes">NEW PICK UP SERVICE <br> <i class="material-icons">shopping_bag</i> <br> Get it fresh
+    </div>
+    <div class="little-boxes">FREE DELIVERY <br><i class="material-icons">local_shipping</i> <br>Delivered to your
+        door step</div>
+        
+    <div class="little-boxes"> SPECIAL GIFT WRAPS<br> <i class="material-icons">shopping_cart</i> <br>Send a sweet
+        surprise</div>
+</div>
+
+
+
+
+      
+<!-- Trinity -->
 
 <!-- Line break with link to all cookies page -->
 <div></div>
@@ -58,7 +85,7 @@
 </div>
 
 <!-- IDK section maybe review or specialty products (Make sothing up) -->
-<section>
+<section id = Goodie-Pic>
     <div class="flex-container"> 
     <div class="flex-item box-1"><a href ="#"><img src = ""  alt="Pic 1"></a></div>
     <div class="flex-item box-2"><a href ="#"><img scr = ""  alt="Pic 2"></a></div>
@@ -75,33 +102,39 @@
 </section>
 
 
+<!-- Raven -->
+    <footer>
+        <div class="more-container">
+            <div class="more-boxes">Shop: <br>
+            <a href="#">About </a><br> 
+            <a href="#">FAQ </a><br> 
+            <a href="#"> Shipping</a><br> 
+            <a href="#"> Store Policy</a> <br> 
+            <a href="#">Contact me</a></div>
+            <div class="more-boxes">Hours: <br>Mon-Fri: 7am - 10pm <br>Saturday: 8am - 11pm <br>Sunday: 11am - 11pm
+            </div>
+            <div class="more-boxes"> Address: <br>  2010 Main Street, Aliquippa, PA 15001            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Search" name="search">
+                    
+            </div>
+
+
+
+
+        </div>
+        <pre> <br>
+    Copyright &#169; 2024 Chaney's Delight
+            A Chaney's Delights Production
+                             All rights reserved</pre>
+
+    </footer>
 
 
 
 
 
-
-
-
-
-
-<!-- Raven Griffen -->
-
-<!--Best Sellers with some text  -->
-
-<!-- 3 individual div flexed into the section pic off product with price with link to their own page-->
-<section></section>
-
-
-
-
-
-
-<!-- Serives more infomation like Pickup, Deliver, Setup -->
-<section></section>
-
-<!-- Flex 4 columns and and a alone p under  Columns include Shop, hours, Addres, SignUp  p include copyright-->
-<footer></footer>
 
 </div>
 </body>
