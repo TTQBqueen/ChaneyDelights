@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <script src="/homeJava.js"> </script>
+    </head>
+
+
+    <body>
+  <!-- Nav1: Name, Logo , Search, Login, shopping cart -->
+  <nav id = "nav1"> 
+    <div id = "name">Chaney’s Delights</div>
+    <div id = "search"> <span class = "search"><form action="#"><input type="text" placeholder="Search" name="search">
+        <button id ="Search">Search</button><a href="#" class="button"></a></div>
+    <div class = "login">
+        <i class="material-icons" id = "navIcon">face_2</i>
+        <a href="#">Sign In</a></div>
+    <div id = ShoppingCart><i class="material-icons" id = "navIcon" ><a href="pageCart.html">shopping_cart_checkout</a></i></div>
+  </nav>
+  
+  <!-- The sidebar -->
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" OnClick="closeNav()">&times;</a>
+    <div><a href ="index.html">HOME</a></div>
+      <div><a href ="products.html">SHOP</a></div>
+       <div><a href ="pageCart.html">CART</a></div>
+     
+      <div><a href ="#">ABOUT ME</a></div>
+      <div><a href ="#">CONTACT</a></div>
+      
+      <div><a href ="#">FACEBOOK</a></div>
+      <div><a href ="#">YOUTUBE</a></div>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  
+  <span id= "nav" OnClick="openNav()">&#9776; NAV</span>
+
+
+
+
+
+
+    <div id="container">
+    
+    
+      
+
+<div class="Listcontainer">
+
+
+
+<!-- Item 1 -->
+<div class="listCart">
+<div class = "cartImages"> <img src ="./cookiePic.jpg" alt ="macaron"></div>
+    <div class = "name"> Chocolate Chip</div>
+    <div id="KDtotalPrice"> $12.00 </div>
+    <div class="quantity">
+       <button><span class="minus">-</span></button> 
+        <span class= "numOf"> 2 </span>
+        <button><span class="plus">+</span></button>
+    </div>
+    <div id="total">$24.00</div> 
+
+    <button class="remove"><span >x</span></button>
+</div>
+
+<!-- Item 1 -->
+<div class="listCart">
+    <div class = "cartImages"> <img src ="./pic1.jpeg" alt ="macaron"></div>
+        <div class = "name"> Macaron</div>
+        <div id="KDtotalPrice"> $3.00 </div>
+        <div class="quantity">
+           <button><span class="minus">-</span></button> 
+            <span class= "numOf">1</span>
+            <button><span class="plus">+</span></button>
+        </div>
+        <div id="total">$3.00</div> 
+    
+        <button class="remove"><span >x</span></button>
+    </div>
+
+
+
+</div>
+
+<section class="totalCheck">
+<p><u>Subtotal:</u> $27.00</p> 
+<p><u>Sales Tax:</u> $1.83</p>
+<p><u>Delivery Fee:</u> $15.00</p>
+<p><b>Grand toal:</b> $43.83 </p>
+
+<button id = "CheckoutButton">CheckOut</button>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="more-container">
+            <div class="more-boxes">Shop: <br>
+            <a href="#">About </a><br> 
+            <a href="#">FAQ </a><br> 
+            <a href="#"> Shipping</a><br> 
+            <a href="#"> Store Policy</a> <br> 
+            <a href="#">Contact me</a></div>
+            <div class="more-boxes">Hours: <br>Mon-Fri: 7am - 10pm <br>Saturday: 8am - 11pm <br>Sunday: 11am - 11pm
+            </div>
+            <div class="more-boxes"> Address: <br>  2010 Main Street, Aliquippa, PA 15001 </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Enter eamil" name="search">
+                    
+            </div>
+
+
+
+
+        </div>
+        <pre id = copyright> <br>
+    Copyright &#169; 2024 Chaney's Delight
+          A Chaney's Delights Production
+                               All rights reserved</pre>
+
+    </footer>
+
+    
+</body>
+</html>

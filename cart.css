@@ -1,0 +1,104 @@
+
+#Itemtitle{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+  img{
+    height: 50px;
+    width: 100px;
+
+  }
+  #Search{
+    width: fit-content;
+    border-radius: 0;
+    font-size: small;
+  }
+  button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20%;
+    margin: 2px;
+    font-size: large;
+    width: 25px;
+  }
+button.remove{
+    border: none;
+    background-color: antiquewhite;
+   
+}
+button:hover{
+cursor: pointer;
+background-color: rgb(211, 210, 210);
+
+}
+  .listCart
+  {
+    display: flex;
+    justify-content: space-evenly;
+    width:90%;
+    margin: 5%;
+    background-color: antiquewhite;
+    padding: 10px;
+    align-items: center;
+  }
+
+  footer{
+    margin-top: 20%;
+  }
+  .totalCheck{
+display: flex;
+flex-direction: column;
+width:90%;
+justify-content: space-between;
+align-items: end;
+line-height: 1.5px;
+  }
+  #CheckoutButton{
+    width: 20%;
+    background-color: rgb(227, 226, 226);
+    border-radius: 0;
+  }
+#nav{
+  background-color: rgb(165, 200, 165);
+  color:white;
+  padding: 5px;
+}
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(165, 200, 165);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
