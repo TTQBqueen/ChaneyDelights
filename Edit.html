@@ -1,3 +1,5 @@
+<!-- allow users to modify details of a product -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,10 +37,15 @@
 
      <h1>Product Edit Page</h1>
 <div class="container">
+    
     <label for="searchInput">Search Product:</label>
     <input type="text" id="searchInput" oninput="filterProducts()">
     <br>
     <!-- Product Selection -->
+    <label for="productID">Product ID:</label>
+    <input type="text" id="productID" readonly>
+    <br>
+  
    <span><label for="productSelection">Select a Product:</label> 
     <select id="productSelection" onchange="loadProductDetails()">
 
