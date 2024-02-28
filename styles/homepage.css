@@ -1,169 +1,123 @@
-body {
-    background-color: white;
-    font-size: 14pt;
-    margin: 10%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-
-}
-a {
-  color: black;
-}
-a:hover{
-  color: rgb(175, 175, 175);
-}
-
-/* Trinity CSC */
-#login {
-  font-size: 20px;
-}
-header{
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-#nav1 {
-  font-family:cursive;
-    background-color: #eabfcb;
-   display: flex;
-   justify-content: space-around;  
-   height: 30pt;
-   padding-top: 5pt;
-   color:white;   
-}
-#name{
-    align-self: stretch;
-    width:100pt;
-    font-size: 15pt;
-    margin-right: 5%;
-    white-space: nowrap;
-    font-weight: bold;
-
-}
-
-#navIcon{
-  font-size: 25pt;
-}
-  
-
-#nav2{
-    /* Just to make it eaire to see will be white in the end */
-    font-size: 10pt;
-    display: flex;
-   justify-content: space-evenly; 
-   height: 40pt; 
-   align-items: flex-end; 
-   
-}
-#empty{
-    width: 50pt;
-}
+/******** SPLASH SECTION ********/
 .splash {
-    position: relative;
-    text-align: center;
-    color: black;
-    margin-top:5%;
-  
-
-  }
-  
-  /* Bottom left text */
-  .Left-Center {
-    position: absolute;
-    top: 10%;
-  }
-  .shopButton{
+  position: relative;
+  text-align: center;
+  color: black;
+  margin-top: 5%;
+}
+/* Bottom left text */
+.Left-Center {
+  position: absolute;
+  top: 10%;
+}
+.shopButton {
   position: absolute;
   bottom: 8px;
   left: 50%;
   border: 1px solid black;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  
-
-  #line-break {
-    display: flex;
-
-    margin-top: 10%;
-    align-items: center;
-    margin-bottom: 10%;
-    
-  }
-
-.line{
-  border: 1px solid black;
-  width:100%;
-  
-}
-
-#centerCookie {   
+  border: none;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
-  width:100% ;
-
- 
-  
-
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-/* Raven CSC */
-#Goodie-Pic{
+#line-break {
+  display: flex;
+
+  margin-top: 10%;
+  align-items: center;
   margin-bottom: 10%;
-  
+}
+.line {
+  border: 1px solid black;
+  width: 100%;
+}
+#centerCookie {
+  text-align: center;
+  width: 100%;
+}
+/******** GOODIES SECTION ********/
+#Goodie-Pic {
+  margin-bottom: 10%;
+
   display: flex;
   justify-content: space-around;
 }
-
-
-  .box-1 {
+.box-1 {
   background-color: antiquewhite;
-
-  }
-  .box-2 {
-  background-color: #eabfcb;
-  }
-  .box-3 {
-  background-color: #86e6ee;
-  }
-  h1{
-    text-align: center;
-    font-size: x-large;
-  }
-
-  #hiden{
-    align-self: center;
-  }
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
 }
-#button{
+.box-2 {
+  background-color: #eabfcb;
+}
+.box-3 {
+  background-color: #86e6ee;
+}
+h1 {
+  text-align: center;
+  font-size: x-large;
+}
+#hiden {
+  align-self: center;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+#button {
   border: none;
   color: white;
-margin:10pt;
+  margin: 10pt;
   padding: 15px 32px;
   text-align: center;
   align-items: center;
   font-size: 20px;
 }
-
-.search input[type=text] {
-  width: 200px;
-  height: 25px;
-  border-radius: 25px;
-  border: none;
+/******** BEST SELLERS ********/
+.flex-container {
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-evenly;
 }
-
-.search {
-  float: right;
-  margin: 5px;
+.flex-item {
+  height: 350px;
+  width: 350px;
+  margin: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 100px;
+  font-size: 30px;
+  color: white;
+}
+.box-1 {
+  background-color: antiquewhite;
+}
+.box-2 {
+  background-color: #eabfcb;
+}
+.box-3 {
+  background-color: #86e6ee;
+}
+.container {
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 2px;
+}
+.little-boxes {
+  height: 200px;
+  text-align: center;
+  text-align: end;
 }

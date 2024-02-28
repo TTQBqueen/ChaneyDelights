@@ -1,0 +1,162 @@
+/******** NAVAGATON SIDE BAR ********/
+#nav {
+  background-color: rgb(165, 200, 165);
+  color: white;
+  padding: 5px;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(165, 200, 165);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/******** FOOTER ********/
+footer {
+  margin-top: 20%;
+  background-color: #ecafc0;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.foot {
+  height: 20px;
+    width: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 10px;
+    font-size: 10px;
+    color: white;
+}
+.material-icons {
+  font-size: 100px;
+}
+.more-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-flow: row nowrap;
+}
+.search input[type="text"] {
+  width: 300px;
+  height: 25px;
+  border-radius: 25px;
+  border: none;
+}
+.search {
+  float: right;
+  margin: 5px;
+}
+pre#copyright {
+  font-size: 10pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/******** HEADER BAR ********/
+#login {
+  font-size: 20px;
+}
+header{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#nav1 {
+  font-family:cursive;
+    background-color: #eabfcb;
+   display: flex;
+   justify-content: space-around;  
+   height: 30pt;
+   padding-top: 5pt;
+   color:white;   
+}
+#name{
+    align-self: stretch;
+    width:100pt;
+    font-size: 15pt;
+    margin-right: 5%;
+    white-space: nowrap;
+    font-weight: bold;
+
+}
+
+#navIcon{
+  font-size: 25pt;
+}
+#nav2{
+    /* Just to make it eaire to see will be white in the end */
+    font-size: 10pt;
+    display: flex;
+   justify-content: space-evenly; 
+   height: 40pt; 
+   align-items: flex-end; 
+   
+}
+#empty{
+    width: 50pt;
+}
+
+
+/******** BODY ********/
+body {
+  background-color: white;
+  font-size: 14pt;
+  margin: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+
+}
+a {
+color: black;
+}
+a:hover{
+color: rgb(175, 175, 175);
+}

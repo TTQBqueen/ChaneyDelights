@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="./styles/homepage.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/Gobal.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/admin.css"/>
+    <script src="scripts/homeJava.js" defer></script>
+    <title>BULK</title>
+
+
+</head>
+<body>
+      <!-- HEADER BAR -->
+      <nav id = "nav1"> 
+        <div id = "name">Chaney’s Delights</div>
+        
+        <div class = "login">
+            <i class="material-icons" id = "navIcon">face_2</i>
+            <a href="./index.html">Sign Out</a></div>
+    </nav>
+    
+    <!-- SIDE BAR -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" OnClick="closeNav()">&times;</a>
+
+        <div><a href ="./bulk.html">BULK</a></div>
+        <div><a href ="./Edit.html">EDIT</a></div>
+        <div><a href ="./index.html">SIGNOUT</a></div>
+
+    </div>
+        <!-- open close-->
+    <span id= "nav" OnClick="openNav()">&#9776; NAV</span>
+
+
+    <form>
+        <h2>Upload File</h2>
+        <div class="container">
+        <p>Please select a file to upload:</p>
+        <input id = "file" type="file" name="fileUpload">
+        <p>Accepted file types: .png, .jpeg, </p>
+        <p>Example file format:</p>
+        <button type="submit">Upload File</button>
+    </form></div>
+
+</body>
+</html>

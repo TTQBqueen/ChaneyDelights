@@ -4,150 +4,109 @@
 <meta charset="utf-8">
 <title>Chaney’s Delights</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- <link rel="stylesheet" href="./styles/style.css" />
-<link rel="stylesheet" href="./styles/homepage.css" />
-<link rel="stylesheet" type="text/css" href="./styles/nav.css"/>
-<script src="script.js" defer></script>
+<link rel="stylesheet" type="text/css" href="./styles/homepage.css"/>
+<link rel="stylesheet" type="text/css" href="./styles/Gobal.css"/>
+<script src="scripts/homeJava.js" defer></script>
 </head>
+
 <body>
- <!-- Nav1: Name, Logo , Search, Login, shopping cart -->
- <nav id = "nav1"> 
-    <div id = "name">Chaney’s Delights</div>
-    <div id = "search"> <span class = "search"><form action="#"><input type="text" placeholder="Search" name="search">
-        <button>Search</button><a href="#" class="button"></a></div>
-    <div class = "login">
-        <i class="material-icons" id = "navIcon">face_2</i>
-        <a href="#">Sign In</a></div>
-    <div id = ShoppingCart><i class="material-icons" id = "navIcon" ><a href="pageCart.html">shopping_cart_checkout</a></i></div>
-  </nav>
-  
-  <!-- The sidebar -->
-  <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" OnClick="closeNav()">&times;</a>
-    <div><a href ="./index.html">HOME</a></div>
-      <div><a href ="./products.html">SHOP</a></div>
-       <div><a href ="./pageCart.html">CART</a></div>
-     
-      <div><a href ="#">ABOUT ME</a></div>
-      <div><a href ="#">CONTACT</a></div>
-      
-      <div><a href ="#">FACEBOOK</a></div>
-      <div><a href ="#">YOUTUBE</a></div>
-  </div>
-  
-  <!-- Use any element to open the sidenav -->
-  
-  <span id= "nav" OnClick="openNav()">&#9776; NAV</span>
-
-
-
-
-<div id="container">
-
-
-<!-- good pic with text depecting solgon or small summary with a shop now button (make it look good)-->
-    <div class="splash">
-
-        <img src="./images/cookiePic.jpg" alt="nice pic " style="width:100%;">
-
-
-        <div class="Left-Center">Chaney’s Delights
-            <p>"Where baking meets the spirit”</p>
-            
-        </div>
-      <a href="./products.html"><button class="button">Shop Now</button></a>
-      </div>
-        
-<!-- Raven Griffen -->
-
-<h1> Best Sellers</h1>
-<div class="flex-container">
-
-    <div class="flex-item box-1"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 1"></a></div>
-    <div class="flex-item box-2"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 2"></a></div> 
-    <div class="flex-item box-3"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 3"></a></div>
-
-
-</div>
-
-<div class="container">
-    <div class="little-boxes">NEW PICK UP SERVICE <br> <i class="material-icons">shopping_bag</i> <br> Get it fresh
-    </div>
-    <div class="little-boxes">FREE DELIVERY <br><i class="material-icons">local_shipping</i> <br>Delivered to your
-        door step</div>
-        
-    <div class="little-boxes"> SPECIAL GIFT WRAPS<br> <i class="material-icons">shopping_cart</i> <br>Send a sweet
-        surprise</div>
-</div>
-
-
-
-
-      
-<!-- Trinity -->
-
-<!-- Line break with link to all cookies page -->
-<div></div>
-<div id = "line-break">
-    <div class = "line"></div>
-    <div id= "centerCookie"> <h1><a href="./products.html">Goodies</a></h1></div>
-    <div class = "line"></div>
-</div>
-
-<!-- IDK section maybe review or specialty products (Make sothing up) -->
-<section id = Goodie-Pic>
-    <div class="flex-container"> 
-    <div class="flex-item box-1"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 1"></a></div>
-    <div class="flex-item box-2"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 2"></a></div> 
-    <div class="flex-item box-3"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 3"></a></div> 
-  
+    <!-- HEADER BAR -->
+    <nav id = "nav1"> 
+        <div id = "name">Chaney’s Delights</div>
+        <div id = "search"> <span class = "search"><form action="#"><input type="text" placeholder="Search" name="search">
+            <button>Search</button><a href="#" class="button"></a></div>
+        <div class = "login">
+            <i class="material-icons" id = "navIcon">face_2</i>
+            <a href="#">Sign In</a></div>
+        <div id = ShoppingCart><i class="material-icons" id = "navIcon" ><a href="pageCart.html">shopping_cart_checkout</a></i></div>
+    </nav>
     
+    <!-- SIDE BAR -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" OnClick="closeNav()">&times;</a>
+        <div><a href ="./index.html">HOME</a></div>
+        <div><a href ="./products.html">SHOP</a></div>
+        <div><a href ="./pageCart.html">CART</a></div>
+        
+        <div><a href ="#">ABOUT ME</a></div>
+        <div><a href ="#">CONTACT</a></div>
+        
+        <div><a href ="#">FACEBOOK</a></div>
+        <div><a href ="./bulk.html">*ADMIN*</a></div>
     </div>
-</div>
- </div>
- 
-</section>
+        <!-- open close-->
+    <span id= "nav" OnClick="openNav()">&#9776; NAV</span>
 
+    <!-- SPLASH-->
+    <div id="container">
+        <div class="splash">
 
-<!-- Raven -->
-    <footer>
-        <div class="more-container">
-            <div class="more-boxes">Shop: <br>
-            <a href="#">About </a><br> 
-            <a href="#">FAQ </a><br> 
-            <a href="#"> Shipping</a><br> 
-            <a href="#"> Store Policy</a> <br> 
-            <a href="#">Contact me</a></div>
-            <div class="more-boxes">Hours: <br>Mon-Fri: 7am - 10pm <br>Saturday: 8am - 11pm <br>Sunday: 11am - 11pm
+            <img src="./images/cookiePic.jpg" alt="nice pic " style="width:100%;">
+            <div class="Left-Center">Chaney’s Delights
+                <p>"Where baking meets the spirit”</p>   
             </div>
-            <div class="more-boxes"> Address: <br>  2010 Main Street, Aliquippa, PA 15001 </div>
-            <div class="search">
-                <form action="#">
-                    <input type="text" placeholder="Enter eamil" name="search">
-                    
-            </div>
-
-
-
-
+        <a href="./products.html"><button class="button">Shop Now</button></a>
         </div>
-        <pre id = copyright> <br>
-    Copyright &#169; 2024 Chaney's Delight
-          A Chaney's Delights Production
-                               All rights reserved</pre>
+            
+    <!-- BEST SELLER -->
+        <h1> Best Sellers</h1>
+        <div class="flex-container">
+            <div class="flex-item box-1"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 1"></a></div>
+            <div class="flex-item box-2"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 2"></a></div> 
+            <div class="flex-item box-3"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 3"></a></div>
+        </div>
 
-    </footer>
+        <div class="container">
+            <div class="little-boxes">NEW PICK UP SERVICE <br> <i class="material-icons">shopping_bag</i> <br> Get it fresh
+            </div>
+            <div class="little-boxes">FREE DELIVERY <br><i class="material-icons">local_shipping</i> <br>Delivered to your
+                door step</div>
+                
+            <div class="little-boxes"> SPECIAL GIFT WRAPS<br> <i class="material-icons">shopping_cart</i> <br>Send a sweet
+                surprise</div>
+        </div>
 
-</div>
 
 
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }</script>
+        <!-- GOODIES -->
+        <div></div>
+        <div id = "line-break">
+            <div class = "line"></div>
+            <div id= "centerCookie"> <h1><a href="./products.html">Goodies</a></h1></div>
+            <div class = "line"></div>
+        </div>
+
+        <section id = Goodie-Pic>
+            <div class="flex-container"> 
+                <div class="flex-item box-1"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 1"></a></div>
+                <div class="flex-item box-2"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 2"></a></div> 
+                <div class="flex-item box-3"><a href ="#"><img src = "./images/pic1.jpeg"  alt="Pic 3"></a></div> 
+            </div>
+    </div>
+        </section>
+
+
+    <!-- Footer -->
+        <footer>
+            <div class="more-container">
+                <div class="more-boxes">Shop: <br>
+                <a href="#">About </a><br> 
+                <a href="#">FAQ </a><br> 
+                <a href="#"> Shipping</a><br> 
+                <a href="#"> Store Policy</a> <br> 
+                <a href="#">Contact me</a></div>
+                <div class="more-boxes">Hours: <br>Mon-Fri: 7am - 10pm <br>Saturday: 8am - 11pm <br>Sunday: 11am - 11pm
+                </div>
+                <div class="more-boxes"> Address: <br>  2010 Main Street, Aliquippa, PA 15001 </div>
+                <div class="search">
+                    <form action="#">
+                        <input type="text" placeholder="Enter eamil" name="search">
+                </div>
+            </div>
+            <pre id = copyright> <br>
+        Copyright &#169; 2024 Chaney's Delight
+            A Chaney's Delights Production
+                                All rights reserved</pre>
+        </footer>
 </body>
 </html>
