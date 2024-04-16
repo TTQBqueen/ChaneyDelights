@@ -8,14 +8,20 @@ app.use(multer().none());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'public')));
 
-//Home Page
+// Import routes
+const productsRouter = require("./routes/products.route");
+
+
+
+
+
 app.get("/", (req, res) => {
-  req.session.returnTo = req.originalUrl;
-  res.render("index", { title: 'Home Page', user: req.user });
+  res.json({ message: "You are at the home page!" });
 });
 
+app.use("/menu", menuRouter);
+app.use("/users", userRouter);
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log("App listening at http://localhost:" + PORT);
