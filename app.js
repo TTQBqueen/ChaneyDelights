@@ -8,15 +8,13 @@ app.use(multer().none());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const productRouter = require("./products");
+app.use(express.static(path.join(__dirname, 'public')));
 
-
+//Home Page
 app.get("/", (req, res) => {
-  res.json({ message: "You are at the home page!" });
+  req.session.returnTo = req.originalUrl;
+  res.render("index", { title: 'Home Page', user: req.user });
 });
-
-app.use("/products", productRouter);
-
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
