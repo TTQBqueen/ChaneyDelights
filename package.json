@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "better-sqlite3": "^9.5.0",
     "express": "^4.19.2",
     "multer": "^1.4.5-lts.1"
   },
@@ -7,7 +8,6 @@
   "description": "csc300xFinalProject",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

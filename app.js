@@ -9,19 +9,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-// Import routes
+// // Import routes
 const productsRouter = require("./routes/products.route");
-
-
-
-
 
 app.get("/", (req, res) => {
   res.json({ message: "You are at the home page!" });
 });
 
-app.use("/menu", menuRouter);
-app.use("/users", userRouter);
+app.use("/product", productsRouter);
+
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log("App listening at http://localhost:" + PORT);
