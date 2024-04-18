@@ -12,6 +12,6 @@ router.get("/all", productsController.getAll);
 
 // router.get("/search", productsController.searchTerm);
 
-// router.post("/new", productsController.createNew);
+router.post("/new", productsController.createNew);
 
 module.exports = router;

@@ -28,23 +28,24 @@ function getAll(req, res, next) {
 //   }
 // }
 
-// function createNew(req, res, next) {
-//   let id = parseInt(req.body.id);
-//   let name = req.body.name;
-//   let category = req.body.category;
-//   let subcategory = req.body.subcategory;
-//   let price = parseFloat(req.body.price);
-//   let cost = parseFloat(req.body.cost);
-//   if (id && name && category && subcategory && price && cost) {
-//     let params = [id, name, category, subcategory, price, cost];
-//     try {
-//       res.json(model.createNew(params));
-//     } catch (err) {
-//       console.error("Error while creating products ", err.message);
-//       next(err);
-//     }
-//   }
-// }
+function createNew(req, res, next) {
+  let id = parseInt(req.body.id);
+  let name = req.body.name;
+  let description = req.body.description;
+  let subcategory = req.body.subcategory;
+  let price = parseFloat(req.body.price);
+  let rateing = parseFloat(req.body.rateing);
+  let category_id = parseInt(req.body.category_id);
+  if (id && name && category && subcategory && price && cost) {
+    let params = [id, name, description, subcategory, price, rateing, category_id];
+    try {
+      res.json(model.createNew(params));
+    } catch (err) {
+      console.error("Error while creating products ", err.message);
+      next(err);
+    }
+  }
+}
 
 // function searchTerm (req, res, next){
 //     try {
@@ -58,9 +59,9 @@ function getAll(req, res, next) {
 
  
 module.exports = {
-  getAll
+  getAll,
   // getOneById,
-  // createNew,
+   createNew
   // searchTerm,
 
 };

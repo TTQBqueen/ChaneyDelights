@@ -15,7 +15,11 @@ const productsRouter = require("./routes/products.route");
 app.get("/", (req, res) => {
   res.json({ message: "You are at the home page!" });
 });
+app.use(express.static(path.join(__dirname, 'public')));
 
+app.get("/", (req, res) => {
+  res.render("index", { title: 'Home Page' });
+});
 app.use("/product", productsRouter);
 
 const PORT = process.env.PORT || 8000;
