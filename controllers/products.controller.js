@@ -32,12 +32,12 @@ function createNew(req, res, next) {
   let id = parseInt(req.body.id);
   let name = req.body.name;
   let description = req.body.description;
-  let subcategory = req.body.subcategory;
+  let url = req.body.url;
   let price = parseFloat(req.body.price);
-  let rateing = parseFloat(req.body.rateing);
+  let rating = parseFloat(req.body.rating);
   let category_id = parseInt(req.body.category_id);
-  if (id && name && category && subcategory && price && cost) {
-    let params = [id, name, description, subcategory, price, rateing, category_id];
+  if (id && name && category && url && price && cost) {
+    let params = [id, name, description, url, price, rating, category_id];
     try {
       res.json(model.createNew(params));
     } catch (err) {
