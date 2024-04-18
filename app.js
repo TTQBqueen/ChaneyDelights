@@ -11,16 +11,16 @@ app.use(express.json());
 
 // // Import routes
 const productsRouter = require("./routes/products.route");
-
-app.get("/", (req, res) => {
-  res.json({ message: "You are at the home page!" });
-});
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.get("/", (req, res) => {
-  res.render("index", { title: 'Home Page' });
-});
 app.use("/product", productsRouter);
+// Define static file directories
+app.use(express.static(path.join(__dirname, "public")));
+
+// Route to serve index.html
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+  
+});
+
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
