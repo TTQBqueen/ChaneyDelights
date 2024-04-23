@@ -1,0 +1,40 @@
+
+  
+  footer {
+    background-color: #eabfcb;
+    padding: 20px 0;
+    margin-top: 10%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .about,
+  .categories,
+  .quick-links {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .about h3,
+  .categories h3,
+  .quick-links h3 {
+    color: black;
+  }
+  
+  .about p,
+  .categories ul,
+  .quick-links ul {
+    margin-top: 0;
+    color: black;
+  }
+  
+  .copy {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+  }
+  

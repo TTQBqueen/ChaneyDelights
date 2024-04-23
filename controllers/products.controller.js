@@ -19,14 +19,14 @@ function getAll(req, res, next) {
   }
 }
 
-// function getOneById(req, res, next) {
-//   try {
-//     res.json(model.getOneById(req.params.id));
-//   } catch (err) {
-//     console.error("Error while getting products ", err.message);
-//     next(err);
-//   }
-// }
+function getOneById(req, res, next) {
+  try {
+    res.json(model.getOneById(req.params.id));
+  } catch (err) {
+    console.error("Error while getting products ", err.message);
+    next(err);
+  }
+}
 
 function createNew(req, res, next) {
   let id = parseInt(req.body.id);
@@ -60,7 +60,7 @@ function createNew(req, res, next) {
  
 module.exports = {
   getAll,
-  // getOneById,
+   getOneById,
    createNew
   // searchTerm,
 

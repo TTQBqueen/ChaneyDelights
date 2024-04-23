@@ -1,0 +1,41 @@
+<%- include('./partials/header') %>
+<%- include('./partials/nav') %>
+    <link rel="stylesheet" type="text/css" href="/styles/cart.css"/>
+    <title>Cart</title>
+  </head>
+
+  <body>
+   
+<div id="cartTable">
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="/images/pic1.jpeg" alt="Item Image"></td>
+                <td id="nmae"><a href ="/details">Macrons</a></td>
+                <td id ="price">$10.00</td>
+                <td><button class="remove">x</button></td>
+            </tr>
+            <!-- Add more rows for other items in the cart -->
+        </tbody>
+    </table>
+</div>
+
+
+
+        <div id = "cartTotal">
+            <div id = "cartTotalTitle"><u>Total</u></div>
+            <div id = "cartTotalPrice">$10.00</div>
+            <button class = "checkout-button">Checkout</button>
+        </div>
+    </div>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

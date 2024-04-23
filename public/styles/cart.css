@@ -1,103 +1,112 @@
-
-#Itemtitle{
-  display: flex;
-  justify-content: space-evenly;
- 
-}
-
 img{
-  height: 50px;
-  width: 100px;
+    height: 100px;
+    width: 100px;
+}
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
+#cartTable th,
+#cartTable td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
-#Search{
-  width: fit-content;
-  border-radius: 0;
-  font-size: small;
-}
-button{
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 20%;
-  margin: 2px;
-  font-size: large;
-  width: 25px;
-}
-button.remove{
-  border: none;
-  background-color: antiquewhite;
- 
-}
-button:hover{
-cursor: pointer;
-background-color: rgb(211, 210, 210);
 
+#cartTable th {
+    background-color: #f2f2f2;
+    width:40%;
 }
-.listCart
-{
-  display: flex;
-  justify-content: space-evenly;
-  width:90%;
-  margin: 5%;
-  background-color: antiquewhite;
-  padding: 10px;
+
+#cartTable img {
+    height: 100px;
+    width: 100px;
+}
+
+.remove {
+    padding: 4px 8px;
+    background-color: #a5c8a5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background-color: #929292;
+}
+#cartTotal {
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: bold;  
+}
+/* button{
+    padding: 10px;
+    background-color: #a5c8a5;
+    color: white;
+    border: soild, 2px;
+    cursor: pointer;
+} */
+
+/* CSS */
+.checkout-button {
   align-items: center;
-}
+  background-color: #a5c8a5;
 
-footer{
-  margin-top: 20%;
-}
-.totalCheck{
-display: flex;
-flex-direction: column;
-width:90%;
-justify-content: space-between;
-align-items: end;
-line-height: 1.5px;
-}
-#CheckoutButton{
-  width: 20%;
-  background-color: rgb(227, 226, 226);
-  border-radius: 0;
-}
-#nav{
-background-color: rgb(165, 200, 165);
-color:white;
-padding: 5px;
-}
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: rgb(165, 200, 165);
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  /* font-family: Inter,sans-serif; */
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.checkout-button:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
   display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+  height: 48px;
+  left: 0;
+  width: 100%;
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.checkout-button:hover:after {
+  transform: translate(0, 0);
+}
+
+.checkout-button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.checkout-button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .checkout-button {
+    padding: 0 40px;
+  }
 }

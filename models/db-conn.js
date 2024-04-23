@@ -1,9 +1,8 @@
-//Data base configuration file
 "use strict";
 
 const sqlite = require("better-sqlite3");
 const path = require("path");
-const db = new sqlite(path.resolve("create_tables.sql.db"), { fileMustExist: true });
+const db = new sqlite(path.join(__dirname, "../.data", "create_tables.sql.db"));
 
 function all(sql, ...params) {
   return db.prepare(sql).all(params);

@@ -1,0 +1,94 @@
+<%- include('./partials/header') %>
+<%- include('./partials/nav') %>
+<title>
+      <%= title %>
+  </title>
+  <body>
+    
+      <div class="slideshow-container"> 
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class = "slideimage" src="/images/pic1.jpeg" style="width:100%">
+          <div class="text"></div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class = "slideimage" src="/images/cookiePic.jpg" style="width:100%"> 
+          <div class="text"></div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class = "slideimage" src="/images/pic1.jpeg" style="width:100%">
+          <div class="text"></div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+    <main>
+       <!-- BEST SELLER -->
+       <h1> Best Sellers</h1>
+       <div class="flex-container">
+           <div class="flex-item box-1"><a href ="#"><img src = "/images/pic1.jpeg"  alt="Pic 1"></a></div>
+           <div class="flex-item box-2"><a href ="#"><img src = "/images/pic1.jpeg"  alt="Pic 2"></a></div> 
+           <div class="flex-item box-3"><a href ="#"><img src = "/images/pic1.jpeg"  alt="Pic 3"></a></div>
+       </div>
+
+       <div class="container">
+           <div class="little-boxes">NEW PICK UP SERVICE <br> <i class="material-icons">shopping_bag</i> <br> Get it fresh
+           </div>
+           <div class="little-boxes">FREE DELIVERY <br><i class="material-icons">local_shipping</i> <br>Delivered to your
+               door step</div>
+               
+           <div class="little-boxes"> SPECIAL GIFT WRAPS<br> <i class="material-icons">shopping_cart</i> <br>Send a sweet
+               surprise</div>
+       </div>
+ <!-- GOODIES -->
+ <div></div>
+ <div id = "line-break">
+     <div class = "line"></div>
+     <div id= "centerCookie"> <h1><a href="/images/Renate Forbes.png">About Me</a></h1></div>
+     <div class = "line"></div>
+ </div>
+<!-- About me -->
+<section class=" about-me">
+  <div id="about-me-img"><img src = "/images/Renate Forbes.png"  alt="Reante Forbes"></a></div>
+  <p id="about-me-text">
+    Welcome to Chaney’s Delights! I'm the founder Renate Forbes, the proud owner and baker extraordinaire 
+    behind this cozy corner of confectionary delights. At Chaney’s Delights, we believe in more than just 
+    crafting delicious treats – we believe in infusing every creation with a sprinkle of joy and a dash of soul. 
+    Our slogan, "Where baking meets the spirit," encapsulates our commitment to not just satisfying your sweet tooth,
+     but also uplifting your spirits with every bite. Join our community of fellow dessert enthusiasts and embark 
+     on a journey of indulgence and inspiration. Come on in, take a seat, and let's savor the sweetness of life together!
+  </p>
+</section>
+
+
+<!-- Catagories -->
+ <section id = Goodie-Pic>
+     <div class="Gooddie-flex-container"> 
+         <div id="banner1"><a href ="#"><img class="banner" src = "/images/candyapple.png"  alt="Pic 1"></a></div>
+         <div id="banner2"><a href ="#"><img class="banner" src = "/images/cookiebanner.png"  alt="Pic 2"></a></div> 
+         <div id="banner3"><a href ="#"><img class="banner" src = "/images/comingsoonbanner.png"  alt="Pic 3"></a></div> 
+     </div>
+ </section>
+ 
+  </main>
+    <%- include('./partials/footer') %>
+  </body>
+  </html>

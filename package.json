@@ -1,16 +1,18 @@
 {
   "dependencies": {
     "better-sqlite3": "^9.5.0",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "multer": "^1.4.5-lts.1"
+    "init": "^0.1.2",
+    "multer": "^1.4.5-lts.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   },
-  "name": "chaneydelights.github.io",
-  "description": "csc300xFinalProject",
-  "version": "1.0.0",
-  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  }
 }
