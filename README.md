@@ -6,3 +6,6 @@ csc300xFinalProject
 3. Start the app by running npm start
 4. Navigate to http://localhost:8000/homepage
 5. To Acces admin go to http://localhost:8000/admin/bulk or http://localhost:8000/admin/edit
+
+    Live Website (May or May  not be up)
+   *https://lively-plant-apricot.glitch.me/homepage 
