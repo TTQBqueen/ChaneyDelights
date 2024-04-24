@@ -1,40 +1,43 @@
-<!-- <table>
-  <tr>
-      <th>ID</th>
-      <th>Name </th>
-      <th>Price </th>
-  </tr>
-  <% for (const product of products){ %>
-      <tr>
-          <td>
-                  <%= product.id %>
-              </a>
-          </td>
-          <td>
-              <%= product.name %>
-          </td>
-          <td>
-              <%= product.price %>
-          </td>
-      </tr>
-      <% } %>
-</table>
-</div>
-</body>
-
-</html> -->
-
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+<link rel="stylesheet" type="text/css" href="/styles/products.css"/>
 <body>
-  <div class="container">
+  <!-- <div class="container">
       <% for (const product of products) { %>
           <div class="product-square">
-            <img src = "<%= product.url %>"">
+            <img id = "product-image" src = "<%= product.url %>">
               <h2><%= product.name %></h2>
               <p>Price: <%= product.price %></p>
 
               <a href="<%= product.url %>">
                 <button>View Details</button></a>
+                <button id = "addOne" >
+                  <a href="/public/projects/pageDetails.html"> DETAILS</a>
+                </button>
           </div>
       <% } %>
-  </div>
+  </div> -->
+
+<div class="container">
+  <% for (const product of products) { %>
+    <div class="ListProducts zoom" >
+      <div class="items">
+        <img id = "product-image" src = "<%= product.url %>">
+        <h2>Name: <%= product.name %></h2>
+    <div class ="price">
+      <p>Price: <%= product.price %></p>
+    </div>
+    <button id = "addOne" >
+      <a href="/products/deails/<%=product.id %>"> DETAILS</a>
+    </button>
+      </div>
+    </div>
+ 
+    <% } %>
+</div>
+
+
+
 </body>
+
+<%- include('partials/footer') %>

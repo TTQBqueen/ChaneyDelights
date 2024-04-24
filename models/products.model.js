@@ -17,11 +17,18 @@ function getOneById(id) {
   const item = db.get(sql, id);
   return item;
 };
+function createNew(params) {
+  let sql =
+    'INSERT INTO menu ("id","name","description","url","price","frontpg""category_id") ' +
+    "VALUES(?, ?, ?, ?, ?, ?, ?);";
+  const item = db.run(sql, params);
+  return item;
+};
 module.exports = {
   getAll,
    getAllByCategory,
-  getOneById
-  // createNew
+  getOneById,
+   createNew
   // search,
   // deleteById,
   // update,

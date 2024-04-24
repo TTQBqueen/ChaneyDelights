@@ -10,37 +10,81 @@
     newButton.addEventListener("click", function () {
         id("form-popup").style.display = "block";
     });
-    let updateButton = id("update-product-btn");
-    updateButton.addEventListener("click", function () {
-        id("update-form-popup").style.display = "block";
-    });
-
 
     let saveButton = id("save-product");
     saveButton.addEventListener("click", function (e) {
         e.preventDefault();
         submitForm();
     });
+
+    let closeButton = id("cancel-btn");
+    closeButton.addEventListener("click", function (e) {
+        id("form-container").reset();
+        id("form-popup").style.display = "none";
+    });
+
+    function submitForm() {
+        let params = new FormData(document.getElementById("form-container")); // pass in entire form tag
+        let jsonBody = JSON.stringify(Object.fromEntries(params)); //make form data json string.
+        console.log("we tried to submit the form");
+        fetch("/menu/new", {
+            method: "POST",
+            headers: {
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json",
+            },
+            body: jsonBody,
+        })
+            .then(reload)
+           // .then(refreshTable)
+            .catch(alert);
+    }
+
+    function refreshTable() {
+        id("form-popup").style.display = "none";
+        id("form-container").reset();
+
+    }
+
+    function reload() {
+        location.reload();
+    }
+
+
+    function id(idName) {
+        return document.getElementById(idName);
+    }
+
+
+
+// Edit ptodects
+
     let updateSaveButton = id("update-save-product");
     updateSaveButton.addEventListener("click", function (e) {
         e.preventDefault();
         let id=e.currentTarget.value;
         submitUpdateForm(id);
     });
+    document.addEventListener("DOMContentLoaded", function () {
+        let uploadForm = document.getElementById("uploadForm");
+        uploadForm.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            // Get the selected file
+            let fileInput = document.getElementById("file");
+            let file = fileInput.files[0];
+    
+            // Assuming you're using FormData to send the file to the server
+            let formData = new FormData();
+            formData.append("file", file);
+    
+            // Assuming you have an AJAX function to handle the upload
+            // Here, replace 'submitUpdateForm' with your actual AJAX function
+            submitUpdateForm(formData);
+        });
+    });
 
-
-    // let closeButton = id("cancel-btn");
-    // closeButton.addEventListener("click", function (e) {
-    //     id("form-container").reset();
-    //     id("form-popup").style.display = "none";
-    // });
-
-    // let closeUpdateButton = id("update-cancel-btn");
-    // closeUpdateButton.addEventListener("click", function (e) {
-    //     id("update-form-container").reset();
-    //     id("update-form-popup").style.display = "none";
-    // });
-
+//delete products
     let deleteButton=id("delete-product-btn");
     deleteButton.addEventListener("click", function (event) {
         let id=event.currentTarget.value;

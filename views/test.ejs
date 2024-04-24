@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Product Upload</title>
+</head>
+<body>
+    <h1>Bulk Product Upload</h1>
+    <p>An admin user can select a file with bulk product data in JSON format (or more such as CSV or text) and upload it into the database.</p>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <h2>Upload Product Data</h2>
+        <p>Please select a file to upload:</p>
+        <input type="file" name="productData" accept=".json, .csv, .txt">
+        <p>Accepted file formats: JSON, CSV, TXT</p>
+        <p>Example JSON file format:</p>
+        <pre>
+[
+  {
+    "name": "Product 1",
+    "description": "Description of Product 1",
+    "price": 19.99,
+    "category": "Category 1"
+  },
+  {
+    "name": "Product 2",
+    "description": "Description of Product 2",
+    "price": 29.99,
+    "category": "Category 2"
+  }
+]
+        </pre>
+        <button type="submit">Upload File</button>
+    </form>
+</body>
+</html>

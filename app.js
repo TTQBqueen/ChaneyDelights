@@ -14,7 +14,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
 // Render
 app.get('/', (req, res) => {
   res.redirect("/index")
@@ -42,6 +41,9 @@ app.get('/login', (req, res) => {
 })
 app.get('/admin/edit', (req, res) => {
   res.render("edit" , { title: 'edit' });
+})
+app.get('/admin/test', (req, res) => {
+  res.render("test" , { title: 'test' });
 })
 //router
 const productsRouter = require("./routes/products.route");
