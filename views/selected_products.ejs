@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<div class="main-body">
+    <p id="result-display">Showing results for </p>
+    <div class="item-display-container">
+        <% item.forEach(function(item) { %>
+            <div class="item">
+                <a href="/detail?item=<%= encodeURIComponent(JSON.stringify(item)) %>" class="item-name"><p>Item Name: <%= item.name %> </p></a>
+
+                <p class="item-price">Item Price:<%= item.price %></p>
+            </div>
+        <% }); %>    
+    </div>
