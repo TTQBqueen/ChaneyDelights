@@ -45,34 +45,35 @@ function getOneById(req, res, next) {
     next(err);
   }
 }
+
 function createNew(req, res, next) {
   let id = parseInt(req.body.id);
   let name = req.body.name;
   let description = req.body.description;
   let url = req.body.url;
   let price = parseFloat(req.body.price);
-  let frontpg = parseInt(req.body.frontpg);
+  let font_page = parseInt(req.body.font_page);
   let category_id = req.body.category_id;
 
- 
-  
-  
-  if (id && name && category && subcategory && price && cost) {
-    let params = [id, name, description, url, price, frontpg, category_id,];
+  if (id && name && description && url && price && font_page && category_id) {
+    let params = [id, name, description, url, price, font_page, category_id];
     try {
       model.createNew(params);
-     res.redirect('/products/all');
+      res.render("products", { products: model.getAll(), title: 'All Products' });
     } catch (err) {
-      console.error("Error while creating menu ", err.message);
+      console.error("Error while creating products ", err.message);
       next(err);
     }
   }
 }
+
+
+
 module.exports = {
   getAll,
   getAllByCategory,
    getOneById,
-  createNew
+  createNew,
   // searchTerm,
 
 };

@@ -30,3 +30,43 @@ Item details page
     <p>***** 19 Five  Star Reviews</p>
     <button>Add To Cart</button>
  </section>
+
+
+
+Edit.ejs page
+<h1>Product Edit Page</h1>
+<div class="container">
+    <h2>Product LookUp</h2>
+    <label for="searchInput">Search Product:</label>
+    <input type="text" id="searchInput" oninput="filterProducts()">
+    <br>
+    <!-- Product Selection -->
+    <label for="productID">Product ID:</label>
+    <input type="text" id="productID" readonly>
+    <br>
+  
+   <span><label for="productSelection">Select a Product:</label> 
+    <select id="productSelection" onchange="loadProductDetails()">
+
+        <!-- Populate this dropdown with product options -->
+        <option value="1"></option>
+       <option value="1">Cholate chip</option>
+       <option value="1">Macarons</option>
+       <option value="1">Product 3</option>
+       <option value="1">Product 4</option>
+
+    </select></span>
+
+    <!-- Search and Filter -->
+    <br>
+   
+    <span><label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter" onchange="filterProducts()">
+        <!-- Populate this dropdown with category options -->
+        <option value="1"></option>
+       <option value="1">Cookies</option>
+       <option value="1">Candy Apples</option>
+       <option value="1">Catagor 3</option>
+       <option value="1">Catagor 4</option>
+    </select></span>
+    <br>
