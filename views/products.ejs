@@ -20,20 +20,23 @@
 
 <div class="container">
   <% for (const product of products) { %>
+
     <div class="ListProducts zoom" >
       <div class="items">
         <img id = "product-image" src = "<%= product.url %>">
-        <h2>Name: <%= product.name %></h2>
+        <h2><%= product.name %></h2>
     <div class ="price">
-      <p>Price: <%= product.price %></p>
+      <p>Price: $<%= product.price %></p>
     </div>
     <button id = "addOne" >
-      <a href="/products/deails/<%=product.id %>"> DETAILS</a>
+      <a href="/products/item/<%= product.id %>"> DETAILS</a>
     </button>
       </div>
     </div>
     <% } %>
 </div>
+
+
 
 
 

@@ -8,36 +8,24 @@
   </head>
 
   <body>
+    <div id ="ImageOnly"><img src="<%= product.url %>"></div>   
+  </div>
+  
+   <section class = "Text">
+      <!-- Name -->
+      <h2 id="details-name"><%= product.name %></h2>
+      <!-- Price -->
+      <p id = details-price">$<%= product.price %> /dozen</p>
+      <!-- Decrption -->
+      <p id ="details-dec">Description:</p>
+      <p><%= product.description %></p>
 
-
-    <div id ="ImageOnly"><img src="/images/cookiePic.jpg"></div>   
-
- 
-</div>
-<div class="smallPic">
-<img class = "zoom" src="/images/cookiePic.jpg">
-<img class ="zoom" src="/images/cookiePic.jpg">
-</div>
-
- <section class = "Text">
-    <!-- Name -->
-    <h2><%= product.name %> </h2>
-    <!-- Price -->
-    <p>$<%= product.price %></p>
-    <!-- Decrption -->
-    <p>Decription:</p>
-    <!-- <p><%= product.decription %></p> -->
-    <!-- 2 etra deails -->
-    <p>***** 19 Five  Star Reviews</p>
-    <button>Add To Cart</button>
- </section>
-
+      <button class="add-Cart">Add To Cart</button>
+   </section>
+  
 </body>
 
 </html>
-
-
-
 
     <%- include('./partials/footer') %>  
 

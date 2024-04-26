@@ -19,10 +19,26 @@ function getOneById(id) {
 };
 function createNew(params) {
   let sql =
-    'INSERT INTO products ("id","name","description","url","price","font_page","category_id") ' +
+    'INSERT INTO products ("id","name","description","url","price","font_page","categorie_id") ' +
     "VALUES(?, ?, ?, ?, ?, ?, ?);";
   const item = db.run(sql, params);
   return item;
+};
+
+function deleteById(id) {
+  let sql = 'DELETE FROM PRODUCTS WHERE id = ?';
+  db.run(sql, id, function(err) {
+      if (err) {
+          throw new Error(err.message);
+      }
+      console.log(`Product with ID ${id} deleted successfully.`);
+  });
+}
+
+function search(params) {
+  let sql = 'SELECT * FROM products WHERE name LIKE ?;';
+  let products = db.all(sql, params);
+  return products;
 };
 
 module.exports = {
@@ -30,7 +46,7 @@ module.exports = {
    getAllByCategory,
   getOneById,
    createNew,
-  // search,
-  // deleteById,
+   search,
+   deleteById,
   // update,
 };

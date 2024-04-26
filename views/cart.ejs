@@ -16,12 +16,12 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id ="table-display">
             <tr>
-                <td><img src="/images/pic1.jpeg" alt="Item Image"></td>
-                <td id="nmae"><a href ="/details">Macrons</a></td>
+                <td><img src="/images/Chcookie.jpeg" alt="Item Image"></td>
+                <td id="name">Chocolate Chip</td>
                 <td id ="price">$10.00</td>
-                <td><button class="remove">x</button></td>
+                <td><button onclick="Remove()" id="remove">x</button></td>
             </tr>
             <!-- Add more rows for other items in the cart -->
         </tbody>
@@ -33,9 +33,21 @@
         <div id = "cartTotal">
             <div id = "cartTotalTitle"><u>Total</u></div>
             <div id = "cartTotalPrice">$10.00</div>
-            <button class = "checkout-button">Checkout</button>
+            <button onclick="checkout()" class = "checkout-button">Checkout</button>
         </div>
     </div>
     <%- include('./partials/footer') %>
   </body>
+  <script>
+     function Remove() {
+        document.getElementById("table-display").style.display = "none";
+        document.getElementById("cartTotalPrice").innerHTML = "$0.00";
+   }
+   function checkout() {
+       alert("Thank you for shopping with us");
+       document.getElementById("table-display").style.display = "none";
+       document.getElementById("cartTotalPrice").innerHTML = "$0.00";
+   }
+  </script>
+
 </html>

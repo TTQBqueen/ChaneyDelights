@@ -1,55 +1,55 @@
  <%- include('partials/header') %>
  <%- include('partials/admin-nav') %>
+ <script src="/scripts/bulk-upload.js" defer></script>
+
+ 
         <title>Bulk</title>
     </head>
  
  <!-- Upload File -->
  <body>
-    <form id="uploadForm"> <!-- Added id to the form -->
-        <h2>Upload File</h2>
-        <div class="container">
-            <p>Please select a file to upload:</p>
-            <input id="file" type="file" name="fileUpload">
-            <p>Accepted file types: .png, .jpeg</p>
-            <p>wowwowWenzy.png</p>
-            <button type="submit">Upload File</button>
-
-            <h2>Product Creation</h2>
-    <!-- <form id="form-container">
-        
-        <label for="ID">Id Number:</label>
-        <input type="number" id="id" required>
-        <br>
-
-        <label for="name">Product Name:</label>
-        <input type="text" id="name" required>
-        <br>
-        
-        <label for="productDescription">Product Description:</label>
-       <textarea id="description" required></textarea>
-        <br>
-
-        <label for="url">Product URL:</label>
-        <input type="text" id="url" required>
-        <br>
-
-        <label for="productPrice">Product Price:</label>
-        <input type="number" id="productPrice" step="1.00" required>
-        <br>
-
-        <label for="rating">Product rating:</label>
-        <input type="number" id="rating" step="1.00" required>
-        <br>
-        <label for="category_id">Product Category:</label>
-        <input type="text" id="category_id" >
-        <br>
-        
-        <button id ="save-product",type="submit">Save</button>
-    </form>
-</div>
-
-        </div>
-    </form> -->
+            <div id="hook">
+                <!-- this container contains the info for the bulk upload section -->
+                <div id="container-bulk">
+                    <h1>Bulk Product Upload</h1>
+            
+                    <form id="bulk-upload-form">
+                        <div id="file-upload-container">
+                            <h2>Select a JSON file: </h2>
+                            <input type="file" id="file" name="file" accept=".json"><br>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+            
+                    <pre>
+            
+Example File
+            
+ [
+ {
+    "id":20
+    "name": "Product 5",
+    "description": "Description 1",
+    "url": "http://www.example.com",
+    "price": 10.99,
+    "front_page":0,
+    "category_id": "Category 1",
+},
+{
+    ""id":21,
+    "name": "Product 6",
+    "description": "Description 1",
+    "url": "http://www.example.com",
+    "price": 10.99,
+    "front_page":0,
+    "category_id": "Category 1",
+ },
+ // ... more products
+ ]
+                        </pre>
+            
+                </div>
+            </div>
 </body>
 
 </body>

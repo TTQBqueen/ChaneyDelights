@@ -24,9 +24,9 @@ app.get('/homepage', (req, res) => {
 app.get('/products', (req, res) => {
   res.render("products" , { title: 'Products' });
 });
-app.get('/details', (req, res) => {
-  res.render("details" , { title: 'details' });
-});
+//  app.get('/details', (req, res) => {
+//   res.render("details" , { title: 'details' });
+//  });
 app.get('/cart', (req, res) => {
   res.render("cart" , { title: 'cart' });
 });

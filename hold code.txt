@@ -70,3 +70,12 @@ Edit.ejs page
        <option value="1">Catagor 4</option>
     </select></span>
     <br>
+
+
+
+
+    edit delete
+     <form id="delete-product-form" action="/products/delete" method="POST">
+        <input type="hidden" name="id" id="product-id" value="<%= product.id %>">
+        <button type="submit" id="delete-product-btn">Delete</button>
+      </form>
